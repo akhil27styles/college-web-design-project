@@ -1,2 +1,2 @@
-# college-web-dedign-project
+# college-web-design-project
 4th semester web design project
