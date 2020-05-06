@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0.75rem 0;
+}
+/*utility classes*/
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary{
+    color: red;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333333;
+
+}
+.bg-dark{
+    background: #f4f4f4;
+    color: #333333;
+
+}
+.bg-primary{
+    background: red;
+    color:#fff;
+
+}
+
+.l-heading{
+    
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height:1.1;
+}
+
+.m-heading{
+    
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height:1.1;
+}
+.para1{
+    
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.py-1 { padding:1.5rem 0; }
+.py-2 { padding:2rem 0; }
+.py-3 { padding:3rem 0; }
+
+
+.p-1 { padding:1.5rem; }
+.p-2 { padding:2rem; }
+.p-3 { padding:3rem; }
+.btn{
+    display:inline-block;
+    color: #fff;
+    background: red;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    font:#1E90FF;
+}
+.btn-dark{
+    background:black;
+    color:#fff;
+}
+.list{
+    margin: 0.5rem;
+    list-style-type: none;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444444 dotted 1px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+/*navbar*/
+#navbar{
+    position: sticky;
+    background: #333333;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    top: 0;
+    z-index:1;
+    padding: 1rem;
+
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+#navbar ul li a:hover{
+/*background: indianred;*/
+color:#1E90FF;
+border-radius: 5px;
+}
+
+#showcase{
+    background: #333333 url('adult-barbell-body-17840.jpg') no-repeat center center/cover;
+    height:100vh;
+    color: #fff;
+    
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    padding: 0 2em;
+    /*overlay*/
+    position: absolute;
+    top: 60px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.4);
+
+}
+#what{
+   
+    margin: 1em 0 0.5em 0;
+    color: black;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;   
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px white, 0 3px #777;
+}
+
+/* home -page footer */
+.footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+   bottom: 0;
+   width: 100%;
+   background-color:#1E90FF;
+   
+
+}
+.footer-p,p{
+    color:white;
+   text-align: center;
+   font-size: 20px;
+   font-family:sans-serif;
+}
+
+/*faames*/
+#men h1,h2{
+    color: white;
+}
+#linkss a{
+    font-size: 30px;
+    background-color: black;
+    color:white;
+}
+#linkss a:hover{
+ background-color: red;
+  padding: 4px 4px 4px 4px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+
+
+
+
+/* membership */
+#mem{
+background:color:black;
+
+}
+#head1, h1,p{
+    text-align:center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+.button {
+   margin:0 auto;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+
+.button:hover  {
+background-color:skyblue;
+color:black;
+}
+
+.button:hover span:after {
+  opacity: 0.1;
+  right: 0;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #008CBA;
+  color: white;
+}
+#bt-mem{
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/*about */
+#about-us {
+  box-sizing: border-box;
+}
+
+#about-para {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+ 
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: left;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+#fb ul{
+ display: flex;
+    top: 0;
+    justify-content: space-around;
+    z-index:1;
+    padding: 1rem;
+       position: sticky;
+        align-items: center;
+
+         padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+
+
+
+footer {
+
+  background-color: #1E90FF;
+  color: white;
+  margin-top:100px;
+  height: 100px;
+
+}
+
+.footer-middle {
+  padding-top: 2em; 
+  color: white;
+}
